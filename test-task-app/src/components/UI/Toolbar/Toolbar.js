@@ -3,9 +3,9 @@ import {Container, Navbar, NavbarBrand} from "reactstrap";
 
 const Toolbar = () => {
     return (
-        <Navbar dark color="primary" light expand="md">
+        <Navbar dark color="dark" light expand="md">
             <Container>
-                <NavbarBrand href="/">Films</NavbarBrand>
+                <NavbarBrand href="/">Фильмы</NavbarBrand>
             </Container>
         </Navbar>
     );

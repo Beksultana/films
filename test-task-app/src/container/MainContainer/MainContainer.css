@@ -1,0 +1,35 @@
+.FilmsTitle {
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.FilmsItem {
+    margin: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 4px 8px #ccc;
+    width: 250px;
+}
+.filmsItemImage img {
+    width: 248px;
+}
+.filmsItemImage img:hover {
+    opacity: 0.5;
+}
+.FilmsItemText h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+.Films {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+}
+.FilmsItem:hover {
+    background: #080a16;
+    color: white;
+    cursor: pointer;
+}

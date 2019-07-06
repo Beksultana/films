@@ -4,6 +4,7 @@ import MainContainer from "./container/MainContainer/MainContainer";
 import {Container} from "reactstrap";
 import {Route, Switch} from "react-router";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Film from "./components/Film/Film";
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
               <Container>
                   <Switch>
                       <Route path="/" exact component={MainContainer}/>
+                      <Route path="/films/:id" component={Film}/>
                   </Switch>
               </Container>
           </Fragment>

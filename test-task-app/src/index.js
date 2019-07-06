@@ -8,10 +8,10 @@ import {Provider} from "react-redux";
 import {createStore, combineReducers, applyMiddleware, compose} from 'redux';
 import thunkMiddleware from 'redux-thunk';
 
-import users from './store/reducers/usersReducers';
+import films from './store/reducers/filmsReducers';
 
 const rootReducer = combineReducers({
-    users: users
+    films: films
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
