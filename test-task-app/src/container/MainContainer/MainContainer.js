@@ -14,7 +14,6 @@ class MainContainer extends Component {
     };
 
     render() {
-        console.log(this.props.films);
 
         const films = this.props.films ? this.props.films.map(film => {
            return (
@@ -24,7 +23,10 @@ class MainContainer extends Component {
                    onClick={() => this.onClickFilmHandler(film._id)}
                >
                    <div className="filmsItemImage">
-                       <img src={"http://localhost:9000/uploads/" + film.image} alt="image"/>
+                       <img
+                           src={"http://localhost:9000/uploads/" +
+                           film.image} alt="image"
+                       />
                    </div>
                    <div className="FilmsItemText">
                        <h2>{film.name}</h2>

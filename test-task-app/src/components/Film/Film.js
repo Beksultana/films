@@ -12,8 +12,6 @@ class Film extends Component {
 
     render() {
 
-        console.log(this.props.film);
-
         return (
             <div className="Film">
                 {this.props.film ?
@@ -21,14 +19,26 @@ class Film extends Component {
                      <Row>
                          <Col sm={4}>
                              <div className="FilmItemImage">
-                                 <img width="350px" src={"http://localhost:9000/uploads/" + this.props.film.image} alt="image"/>
+                                 <img
+                                     width="350px"
+                                     src={"http://localhost:9000/uploads/" +
+                                     this.props.film.image} alt="image"
+                                 />
                              </div>
                          </Col>
                          <Col sm={8}>
                              <div className="FilmItemText">
-                                 <h3><span>Называния: </span><strong>{this.props.film.name}</strong></h3>
-                                 <p><span>Год выпуска: </span> <strong>{this.props.film.year}</strong></p>
-                                 <p><strong>Описание фильма</strong></p>
+                                 <h3>
+                                     <span>Называния: </span>
+                                     <strong>{this.props.film.name}</strong>
+                                 </h3>
+                                 <p>
+                                     <span>Год выпуска: </span>
+                                     <strong>{this.props.film.year}</strong>
+                                 </p>
+                                 <p>
+                                     <strong>Описание фильма</strong>
+                                 </p>
                                  <p>{this.props.film.description}</p>
                              </div>
                          </Col>
